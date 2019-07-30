@@ -87,7 +87,7 @@ $$
 KL[p(·|x;\hat{\theta}) || p(·|x+r_{adv};\hat{\theta})
 $$
 
-$$r_{adv}=argmin_{r,||r||<=\epsilon}KL[p(·|x;\hat{\theta}) || p(·|x+r_{adv};\hat{\theta})$$
+$$r_{adv}=argmin_{r,||r||<=\epsilon}KL[p(·|x;\hat{\theta}) || p(·|x+r_{adv};\hat{\theta})]$$
 
 Approximating by linearizing around $x$
 
@@ -97,6 +97,6 @@ $$
 
 Virtual  Adversarial Loss:
 
-$$L_{v-adv}(\theta)=-\frac{1}{N}\sum_{i=1}^N KL[p(·|x;\hat{\theta}) || p(·|x+r_{v-adv};\hat{\theta})$$
+$$L_{v-adv}(\theta)=-\frac{1}{N}\sum_{i=1}^N KL[p(·|x;\hat{\theta}) || p(·|x+r_{v-adv};\hat{\theta})]$$
 
 
