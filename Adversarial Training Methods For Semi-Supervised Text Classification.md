@@ -84,7 +84,7 @@ def adversarial_loss(embedded, loss, loss_fn):
 ​	add the following term to cost function:
 
 $$
-KL[p(·|x;\hat{\theta}) || p(·|x+r_{adv};\hat{\theta})
+KL[p(·|x;\hat{\theta}) || p(·|x+r_{adv};\hat{\theta})]
 $$
 
 $$r_{adv}=argmin_{r,||r||<=\epsilon}KL[p(·|x;\hat{\theta}) || p(·|x+r_{adv};\hat{\theta})]$$
@@ -92,7 +92,7 @@ $$r_{adv}=argmin_{r,||r||<=\epsilon}KL[p(·|x;\hat{\theta}) || p(·|x+r_{adv};\h
 Approximating by linearizing around $x$
 
 $$
-r_{v-adv} =-\epsilon g/||g||_2, g = \nabla_{x+d}KL[p(·|x;\hat{\theta}) || p(·|x+d;\hat{\theta})]
+r_{v-adv} =-\epsilon g/||g||_2
 $$
 
 Virtual  Adversarial Loss:
