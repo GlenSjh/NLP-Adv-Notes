@@ -1,7 +1,7 @@
 
 <center><font face="arial", size=6>Adversarial Training Methods For Semi-Supervised Text Classification</font></center>
 
-[LINK](https://arxiv.org/abs/1605.07725v1)
+[PAPER](https://arxiv.org/abs/1605.07725v1)
 [CODE](https://github.com/tensorflow/models/tree/master/research/adversarial_text)
 
 ## Abstract
