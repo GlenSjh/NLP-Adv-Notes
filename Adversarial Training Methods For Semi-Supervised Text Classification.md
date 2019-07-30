@@ -92,7 +92,7 @@ $$r_{adv}=\arg\min_{r,||r||<=\epsilon}KL[p(·|x;\hat{\theta}) || p(·|x+r_{adv};
 Approximating by linearizing around $x$
 
 $$
-r_{v-adv} =-\epsilon g/||g||_2, g = \nabla_{x+d}KL[p(·|x;\hat{\theta}) || p(·|x+d;\hat{\theta})]
+r_{v-adv} =-\epsilon g/||g||_2, g = \nabla_{x+d} KL[p(·|x;\hat{\theta}) || p(·|x+d;\hat{\theta})]
 $$
 
 Virtual  Adversarial Loss:
