@@ -82,6 +82,7 @@ def adversarial_loss(embedded, loss, loss_fn):
 > Virtual adversarial loss requires only the input x and does not require the actual label y while adversarial loss defined in Eq(4) requires the label y. This makes it possible to apply virtual adversarial training to semi-supervised learning. 
 
 ​	add the following term to cost function:
+
 $$
 KL[p(·|x;\hat{\theta}) || p(·|x+r_{adv};\hat{\theta})
 $$
