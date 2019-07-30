@@ -96,6 +96,7 @@ Approximating by linearizing around $x$
 $$
 r_{v-adv} =-\epsilon g/||g||_2, g = \nabla_{x+d}KL[p(·|x;\hat{\theta}) || p(·|x+d;\hat{\theta})
 $$
+
 Virtual  Adversarial Loss:
 
 $$
