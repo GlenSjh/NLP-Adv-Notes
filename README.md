@@ -6,7 +6,7 @@ Typora is recommended to read the notes.<br>
 
 | Paper | Conference |
 |-|-|
-| [Deep Text Classification Can be Fooled](Deep Text Classification Can be Fooled.md) | IJCAI 2018 |
+| [Deep Text Classification Can be Fooled](Deep%20Text%20Classification%20Can%20be%20Fooled.md) | IJCAI 2018 |
 | [Black-box Only](#black-box-only) | Attack generators only have access to confidence of victim models |
 | [White-box Only](#white-box-only) | Attack generators have full access to victim models |
 | [Both](#both) | Papers work on both black-box and white-box setting |
