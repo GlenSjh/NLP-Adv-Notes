@@ -1,5 +1,5 @@
 
-<center><font face="arial", size=6>Adversarial Training Methods For Semi-Supervised Text Classification</font></center>
+<center><font face="arial", size=6>Adversarial Training Methods For Semi-Supervised Text Classification</font></center><br>
 [LINK](https://arxiv.org/abs/1605.07725v1)
 
 [CODE](https://github.com/tensorflow/models/tree/master/research/adversarial_text)
@@ -74,7 +74,7 @@ def adversarial_loss(embedded, loss, loss_fn):
 ## Pipelines for adversarial training
 
 1. Generate $r_{adv}$ based on embedding
-2.  throw $x+r_{adv}$ back to network (as the new embedding) to get $L_{adv}$
+2. Throw $x+r_{adv}$ back to network (as the new embedding) to get $L_{adv}$
 3. The new loss to minimize is $L = L_{ori} +L_{adv}$
 
 ### 3. Virtual adversarial training
@@ -87,9 +87,7 @@ $$
 KL[p(·|x;\hat{\theta}) || p(·|x+r_{adv};\hat{\theta})
 $$
 
-$$
-r_{adv}=argmin_{r,||r||<=\epsilon}KL[p(·|x;\hat{\theta}) || p(·|x+r_{adv};\hat{\theta})
-$$
+$$r_{adv}=argmin_{r,||r||<=\epsilon}KL[p(·|x;\hat{\theta}) || p(·|x+r_{adv};\hat{\theta})$$
 
 Approximating by linearizing around $x$
 
