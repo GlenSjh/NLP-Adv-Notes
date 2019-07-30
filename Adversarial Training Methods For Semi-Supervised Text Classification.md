@@ -41,7 +41,7 @@ $$
 $$
 
 $$
-r_{adv}=argmin_{r,||r||<=\epsilon}log(p|x+r;\theta)
+r_{adv}=\arg\min_{r,||r||<=\epsilon}log(p|x+r;\theta)
 $$
 
 Approximating by linearizing around $x$
@@ -87,12 +87,12 @@ $$
 KL[p(·|x;\hat{\theta}) || p(·|x+r_{adv};\hat{\theta})]
 $$
 
-$$r_{adv}=argmin_{r,||r||<=\epsilon}KL[p(·|x;\hat{\theta}) || p(·|x+r_{adv};\hat{\theta})]$$
+$$r_{adv}=\arg\min_{r,||r||<=\epsilon}KL[p(·|x;\hat{\theta}) || p(·|x+r_{adv};\hat{\theta})]$$
 
 Approximating by linearizing around $x$
 
 $$
-r_{v-adv} =-\epsilon g/||g||_2
+r_{v-adv} =-\epsilon g/||g||_2, g = \nabla_{x+d}KL[p(·|x;\hat{\theta}) || p(·|x+d;\hat{\theta})]
 $$
 
 Virtual  Adversarial Loss:
