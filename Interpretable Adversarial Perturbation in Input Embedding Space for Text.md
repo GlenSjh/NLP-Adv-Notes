@@ -21,6 +21,7 @@ Restrict the directions of the perturbations toward the locations of existing wo
 ## Training
 
 **Goal**: 
+
 $$
 \hat{w}=\arg \min_w{J(D,W)}
 $$
