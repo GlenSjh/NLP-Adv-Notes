@@ -84,24 +84,24 @@ $$
 r(\alpha^{(t)})=\sum_{k=1}^{|V|}\alpha_k^{(t)}d_k^{(t)}
 $$
 
-Perturbation on $\tilde{X}$: $\tilde{X}_{+r(\alpha)}=(w^{(t)}+r(\alpha^{(t)}))_{t=1}^T$
+Perturbation on $\tilde{X}$: $\tilde{X}\_{+r(\alpha)}=(w^{(t)}+r(\alpha^{(t)}))\_{t=1}^T$
 
 Find the worst case weights of weight vectors that maximize the loss function
 
 $$
-\alpha_{iAdvT}=\arg\max_{\alpha,||\alpha||<=\epsilon}l(\tilde{X}_{+r(\alpha)},\tilde{Y},W)
+\alpha\_{iAdvT}=\arg\max\_{\alpha,||\alpha||<=\epsilon}l(\tilde{X}\_{+r(\alpha)},\tilde{Y},W)
 $$
 
 Loss of iAdv text:
 
 $$
-J_{iAdvT}(D,W)=\frac{1}{|D|}\sum_{(\tilde{X},\tilde{Y})\in D}l(\tilde{X}_{+r(\alpha_{iAdvT})},\tilde{Y},W)
+J\_{iAdvT}(D,W)=\frac{1}{|D|}\sum\_{(\tilde{X},\tilde{Y})\in D}l(\tilde{X}\_{+r(\alpha_{iAdvT})},\tilde{Y},W)
 $$
 
 Approximating by **linearizing** 
 
 $$
-\alpha_{iAdvT}^{(t)}=\frac{\epsilon g^{(t)}}{||g||_2}, g^{(t)}=\nabla_{\alpha^{(t)}}l(\tilde{X}_{+r(\alpha)},\tilde{Y},W)
+\alpha\_{iAdvT}^{(t)}=\frac{\epsilon g^{(t)}}{||g||_2}, g^{(t)}=\nabla\_{\alpha^{(t)}}l(\tilde{X}\_{+r(\alpha)},\tilde{Y},W)
 $$
 
 Codes:
