@@ -1,3 +1,5 @@
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
 <center> <font face="arial", size=6>Interpretable Adversarial Perturbation in Input Embedding Space for Text</font></center>
 
 > [PAPER](https://arxiv.org/abs/1805.02917)
