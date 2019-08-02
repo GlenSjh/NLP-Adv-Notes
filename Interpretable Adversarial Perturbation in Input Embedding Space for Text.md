@@ -38,9 +38,9 @@ $$
 
 ## Adversarial Training
 
-Denote $r_{AdvT}^{(t)}$ as the adversarial perturbation vector for $t-th$ word $x^{(t)}$ word in input $\tilde{X}$
+Denote $r_{AdvT}^{(t)}$ as the adversarial perturbation vector for $t-th$ word $x^{(t)}$ word in input $\tilde{X}$.
 
-\tilde{X}_{+r} = {(w^{(t)} + r^{(t)})}_{t=1}^T$ denotes $\tilde{X}$ with perturbations
+$\tilde{X}_{+r} = {(w^{(t)} + r^{(t)})}_{t=1}^T$ denotes $\tilde{X}$ with perturbations
 
 Worst-case perturbations:
 
