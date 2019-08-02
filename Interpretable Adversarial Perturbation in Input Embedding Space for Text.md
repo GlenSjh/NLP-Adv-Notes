@@ -40,7 +40,7 @@ $$
 
 Denote $r_{AdvT}^{(t)}$ as the adversarial perturbation vector for $t-th$ word $x^{(t)}$ word in input $\tilde{X}$
 
-[latex]$\tilde{X}_{+r} = [w^{(t)} + r^{(t)}]_{t=1}^T$[\latex] denotes $\tilde{X}$ with perturbations
+[latex]$\tilde{X}_{+r} = [w^{(t)} + r^{(t)}]_{t=1}^T$[/latex] denotes $\tilde{X}$ with perturbations
 
 Worst-case perturbations:
 
