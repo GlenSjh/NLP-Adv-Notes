@@ -51,19 +51,19 @@ $$
 Loss for Adv text:
 
 $$
-J_{AdvT}(D,W)=\frac{1}{|D|}\sum_{(\tilde{X},\tilde{Y})\in D}l(\tilde{X}_{+r_{AdvT}},\tilde{Y},W)
+J\_{AdvT}(D,W)=\frac{1}{|D|}\sum\_{(\tilde{X},\tilde{Y})\in D}l(\tilde{X}_{+r\_{AdvT}},\tilde{Y},W)
 $$
 
 Approximating by **linearizing** 
 
 $$
-r_{AdvT}^{(t)}=\frac{\epsilon g^{(t)}}{||g||_2}, g^{(t)}=\nabla_{w^{(t)}}l(\tilde{X},\tilde{Y},W)
+r\_{AdvT}^{(t)}=\frac{\epsilon g^{(t)}}{||g||_2}, g^{(t)}=\nabla\_{w^{(t)}}l(\tilde{X},\tilde{Y},W)
 $$
 
 **Goal**
 
 $$
-\hat{w}=\arg \min_w{J(D,W)+J_{AdvT}(D,W)}
+\hat{w}=\arg \min_w{J(D,W)+J\_{AdvT}(D,W)}
 $$
 
 ## Interpretable Adversarial Training
