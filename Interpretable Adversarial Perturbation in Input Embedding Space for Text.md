@@ -1,6 +1,6 @@
 <center> <font face="arial", size=6>Interpretable Adversarial Perturbation in Input Embedding Space for Text</font></center>
+
 > [PAPER](https://arxiv.org/abs/1805.02917)
->
 > [CODE](https://github.com/aonotas/interpretable-adv)
 
 ## Abstract
@@ -24,7 +24,9 @@ Restrict the directions of the perturbations toward the locations of existing wo
 $$
 \hat{w}=\arg \min_w{J(D,W)}
 $$
+
 $D$ : entire training data, $W$: overall parameters of model
+
 $$
 J(D,W)=\frac{1}{|D|}\sum_{(\tilde{X}, \tilde{Y}, W)}l(\tilde{X}, \tilde{Y}, W))
 $$
@@ -40,18 +42,25 @@ Denote $r_{AdvT}^{(t)}$ as the adversarial perturbation vector for $t-th$ word $
 $\tilde{X}_{+r} = (w^{(t)} + r^{(t)})_{t=1}^T$ denotes $\tilde{X}$ with perturbations
 
 Worst-case perturbations:
+
 $$
 r_{AdvT} = \arg\max_{r, ||r||<=\epsilon}l(\tilde{X}_{+r},\tilde{Y},W)
 $$
+
 Loss for Adv text:
+
 $$
 J_{AdvT}(D,W)=\frac{1}{|D|}\sum_{(\tilde{X},\tilde{Y})\in D}l(\tilde{X}_{+r_{AdvT}},\tilde{Y},W)
 $$
+
 Approximating by **linearizing** 
+
 $$
 r_{AdvT}^{(t)}=\frac{\epsilon g^{(t)}}{||g||_2}, g^{(t)}=\nabla_{w^{(t)}}l(\tilde{X},\tilde{Y},W)
 $$
+
 **Goal**
+
 $$
 \hat{w}=\arg \min_w{J(D,W)+J_{AdvT}(D,W)}
 $$
@@ -61,26 +70,35 @@ $$
 Let $w_k$ denotes the word embedding vector corresponding the $k-$th word in vocabulary $V$
 
 direction vector $d_k^{(t)}$ indicates the direction from $w^{(t)} $ to $w_k$ in embedding space
+
 $$
 d_k^{(t)} = \frac{\tilde{d}_k^{(t)}}{||\tilde{d}_k^{(t)}||}_2, \tilde{d}_k^{(t)}=w_k - w^{(t)}
 $$
+
 Let $\alpha_k^{(t)}$ be the weight for direction from $t$-th word in the input, $\alpha^{(t)}=(\alpha_k^{(t)})_{k=1}^{|V|}$
 
 The perturbation generated for the $t$-th word:
+
 $$
 r(\alpha^{(t)})=\sum_{k=1}^{|V|}\alpha_k^{(t)}d_k^{(t)}
 $$
+
 Perturbation on $\tilde{X}$: $\tilde{X}_{+r(\alpha)}=(w^{(t)}+r(\alpha^{(t)}))_{t=1}^T$
 
 Find the worst case weights of weight vectors that maximize the loss function
+
 $$
 \alpha_{iAdvT}=\arg\max_{\alpha,||\alpha||<=\epsilon}l(\tilde{X}_{+r(\alpha)},\tilde{Y},W)
 $$
+
 Loss of iAdv text:
+
 $$
 J_{iAdvT}(D,W)=\frac{1}{|D|}\sum_{(\tilde{X},\tilde{Y})\in D}l(\tilde{X}_{+r(\alpha_{iAdvT})},\tilde{Y},W)
 $$
+
 Approximating by **linearizing** 
+
 $$
 \alpha_{iAdvT}^{(t)}=\frac{\epsilon g^{(t)}}{||g||_2}, g^{(t)}=\nabla_{\alpha^{(t)}}l(\tilde{X}_{+r(\alpha)},\tilde{Y},W)
 $$
